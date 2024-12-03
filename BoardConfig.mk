@@ -27,9 +27,6 @@ OVERRIDE_TARGET_FLATTEN_APEX := true
 TARGET_BOOTLOADER_BOARD_NAME := ampere
 TARGET_NO_BOOTLOADER := true
 
-# Display
-TARGET_SCREEN_DENSITY := 320
-
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.dynamic_partitions=true androidboot.dtbo_idx=0 androidboot.boot_devices=ffe07000.emmc otg_device=1 use_uvm=1 buildvariant=user
 BOARD_KERNEL_PAGESIZE := 2048
