@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_ampere.mk
+    $(LOCAL_DIR)/twrp_ampere.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_ampere-user \
-    omni_ampere-userdebug \
-    omni_ampere-eng
+    twrp_ampere-user \
+    twrp_ampere-userdebug \
+    twrp_ampere-eng
