@@ -23,6 +23,6 @@ PRODUCT_MANUFACTURER := amlogic
 PRODUCT_GMS_CLIENTID_BASE := android-droid-tv
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="ampere-user 12 STTC.220815.001 20230728 release-keys"
+    PRIVATE_BUILD_DESC="ampere-user 12 STTC.220815.001 20240806 release-keys"
 
-BUILD_FINGERPRINT := Amlogic/ampere/ampere:12/STTC.220815.001/zhongyinghao07282058:user/release-keys
+BUILD_FINGERPRINT := Amlogic/ampere/ampere:12/STTC.220815.001/zhongyinghao08061648:user/release-keys
