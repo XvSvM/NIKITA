@@ -52,6 +52,10 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_KERNEL_CONFIG := ampere_defconfig
 TARGET_KERNEL_SOURCE := kernel/amlogic/ampere
 
+# Compression
+LZMA_RAMDISK_TARGETS := recovery
+BOARD_HAS_SMALL_RECOVERY = true
+
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
