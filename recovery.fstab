@@ -15,8 +15,8 @@
 /data           ext4     /dev/block/by-name/data           flags=display="Data";backup=1;wipeingui;wipeduringfactoryreset
 /super          emmc     /dev/block/by-name/super          flags=display="Super";backup=1
 /bootloader     vfat     /dev/block/by-name/bootloader     flags=display=odm;backup=1
-/bootloader0    emmc     /dev/block/by-name/bootloader0    flags=display=odm;backup=1
-/bootloader1    emmc     /dev/block/by-name/bootloader1    flags=display=odm;backup=1
+/bootloader0    vfat     /dev/block/by-name/bootloader0    flags=display=odm;backup=1
+/bootloader1    vfat     /dev/block/by-name/bootloader1    flags=display=odm;backup=1
 /cri_data                /dev/block/by-name/cri_data            flags=display=odm;backup=1
 /dtbo           emmc     /dev/block/by-name/dtbo           flags=display=odm;backup=1
 /env            emmc     /dev/block/by-name/env            flags=display=odm;backup=1
