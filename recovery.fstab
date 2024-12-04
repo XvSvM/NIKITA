@@ -13,6 +13,30 @@
 /tee            ext4     /dev/block/by-name/tee            flags=display=tee;backup=1
 /cache          ext4     /dev/block/by-name/cache          flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
 /data           ext4     /dev/block/by-name/data           flags=display="Data";backup=1;wipeingui;wipeduringfactoryreset
-/sdcard        vfat      /dev/block/mmcblk0p1              flags=backup=1;storage;settingsstorage;display="SDCard";wipeingui 
-/extsd         vfat      /dev/block/mmcblk1p1              flags=backup=1;storage;display="extsd";wipeingui;removable
-/usbhost       vfat       /dev/block/sda1                  flags=display="USB OTG";removable;storage
+/super          emmc     /dev/block/by-name/super          flags=display="Super";backup=1
+/bootloader      vfat        /dev/block/by-name/bootloader
+/bootloader0      emmc       /dev/block/by-name/bootloader0
+/bootloader1       emmc      /dev/block/by-name/bootloader1
+/cri_data                /dev/block/by-name/cri_data
+/dtbo              emmc      /dev/block/by-name/dtbo
+/env              emmc       /dev/block/by-name/env
+/factory        ext4      /dev/block/by-name/factory
+/reserved                 /dev/block/by-name/reserved
+/rsv                     /dev/block/by-name/rsv
+/sdcard         vfat     /dev/block/mmcblk0p1              flags=backup=1;storage;settingsstorage;display="SDCard";wipeingui 
+/extsd          vfat     /dev/block/mmcblk1p1              flags=backup=1;storage;display="extsd";wipeingui;removable
+/usbhost        vfat     /dev/block/sda1                   flags=display="USB OTG";removable;storage
+
+
+
+
+
+      
+   
+     
+     
+     
+     
+    
+     
+
