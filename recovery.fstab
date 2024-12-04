@@ -16,29 +16,3 @@
 /sdcard        vfat      /dev/block/mmcblk0p1              flags=backup=1;storage;settingsstorage;display="SDCard";wipeingui 
 /extsd         vfat      /dev/block/mmcblk1p1              flags=backup=1;storage;display="extsd";wipeingui;removable
 /usbhost       vfat       /dev/block/sda1                  flags=display="USB OTG";removable;storage
-
-
- boot -> /dev/block/boot
-     bootloader -> /dev/block/bootloader
-     bootloader0 -> /dev/block/bootloader0
-     bootloader1 -> /dev/block/bootloader1
-     cache -> /dev/block/cache
-     cri_data -> /dev/block/cri_data
-      data -> /dev/block/data
-      dtbo -> /dev/block/dtbo
-     env -> /dev/block/env
-     factory -> /dev/block/factory
-      logo -> /dev/block/logo
-     metadata -> /dev/block/metadata
-      misc -> /dev/block/misc
-     mmcblk0 -> /dev/block/mmcblk0
-     mmcblk0boot0 -> /dev/block/mmcblk0boot0
-     mmcblk0boot1 -> /dev/block/mmcblk0boot1
-     mmcblk0rpmb -> /dev/block/mmcblk0rpmb
-     param -> /dev/block/param
-     recovery -> /dev/block/recovery
-     reserved -> /dev/block/reserved
-     rsv -> /dev/block/rsv
-     super -> /dev/block/super
-     tee -> /dev/block/tee
-     vbmeta -> /dev/block/vbmeta
