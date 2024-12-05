@@ -111,7 +111,6 @@ RECOVERY_VARIANT := twrp
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 TW_THEME := landscape_hdpi
-TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_NO_REBOOT_BOOTLOADER := true
 TW_INCLUDE_NTFS_3G := true
 TW_EXTRA_LANGUAGES := true
