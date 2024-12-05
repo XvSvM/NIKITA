@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/amlogic/franklin
+DEVICE_PATH := device/amlogic/ampere
 
 ALLOW_MISSING_DEPENDENCIES := true
 
@@ -37,21 +37,18 @@ TARGET_BOOTLOADER_BOARD_NAME := ampere
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
-# Graphics
-BOARD_EGL_CFG := $(DEVICE_PATH)/egl.cfg
-USE_OPENGL_RENDERER := true
 
 # Kernel (not real offset ,bypass too big problem)
-BOARD_KERNEL_CMDLINE := androidboot.dynamic_partitions=true androidboot.dtbo_idx=0 androidboot.boot_devices=ffe07000.emmc androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE := androidboot.dynamic_partitions=true androidboot.dtbo_idx=0 androidboot.boot_devices=d0074000.emmc buildvariant=user
 
 BOARD_KERNEL_IMAGE_NAME := Image 
-BOARD_KERNEL_BASE := 0x40078000
+BOARD_KERNEL_BASE := 0x01078000
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_TAGS_OFFSET := 0x0bc08000
-BOARD_RAMDISK_OFFSET     := 0x07c08000
-BOARD_DTB_OFFSET := 0x0bc08000
-BOARD_KERNEL_SECOND_OFFSET := 0x00e88000
+BOARD_KERNEL_TAGS_OFFSET := 0xfef88100
+BOARD_RAMDISK_OFFSET     := 0xfff88000
+BOARD_DTB_OFFSET := 0x00e88000
+BOARD_KERNEL_SECOND_OFFSET := 0xffe88000
 BOARD_BOOTIMG_HEADER_VERSION := 2
 
 BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt/dtb
@@ -71,9 +68,9 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25165824
-BOARD_SUPER_PARTITION_SIZE := 1887436800
+BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := amlogic_dynamic_partitions
-BOARD_AMLOGIC_DYNAMIC_PARTITIONS_SIZE := 1887436800
+BOARD_AMLOGIC_DYNAMIC_PARTITIONS_SIZE := 9122611200
 BOARD_AMLOGIC_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product odm
 
 # Workaround for error copying vendor files to recovery ramdisk
@@ -131,11 +128,9 @@ TW_DEFAULT_LANGUAGE := id-ID
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TARGET_USES_MKE2FS := true
-TW_DEVICE_VERSION := $(shell date '+%Y%m%d') | JonesqPacMan™
+TW_DEVICE_VERSION := $(shell date '+%Y%m%d') | FTS™
 
 # Platform version
 PLATFORM_VERSION := 16.1.0
 
-# BPRB
-MAINTAINER := JonesqPacMan™
- 
+
