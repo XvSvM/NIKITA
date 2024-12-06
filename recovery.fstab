@@ -1,25 +1,30 @@
-/bootloader     emmc     /dev/block/by-name/bootloader     flags=display="Bootloader";backup=1
-/logo           emmc     /dev/block/by-name/logo           flags=display=Logo;backup=1
-/vbmeta         emmc     /dev/block/by-name/vbmeta         flags=display=vbmeta;backup=1
-/recovery       emmc     /dev/block/recovery               flags=display="Recovery";backup=1 
-/boot           emmc     /dev/block/by-name/boot           flags=display="Boot";backup=1
-/misc           emmc     /dev/block/by-name/misc           flags=display="misc";backup=1
-/system         ext4     /dev/block/by-name/system         flags=display="System";backup=1;wipeingui
-/vendor         ext4     /dev/block/by-name/vendor         flags=display="Vendor";backup=1
-/odm            ext4     /dev/block/by-name/odm            flags=display="Odm";backup=1
-/param          ext4     /dev/block/by-name/param          flags=display="Param";backup=1
-/product        ext4     /dev/block/by-name/product        flags=display="Product";backup=1
-/metadata       ext4     /dev/block/by-name/metadata       flags=display="Metadata";backup=1
-/tee            ext4     /dev/block/by-name/tee            flags=display="Tee";backup=1
-/cache          ext4     /dev/block/by-name/cache          flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
-/data           ext4     /dev/block/by-name/data           flags=display="Data";backup=1;wipeingui;wipeduringfactoryreset
-/super          emmc     /dev/block/by-name/super          flags=display="Super";backup=1
-/cri_data       emmc     /dev/block/by-name/cri_data       flags=display="Cri_Data";backup=1
-/dtbo           emmc     /dev/block/by-name/dtbo           flags=display="Dtbo";backup=1
-/env            emmc     /dev/block/by-name/env            flags=display="Env";backup=1
-/factory        ext4     /dev/block/by-name/factory        flags=display="Factory";backup=1
-/reserved       emmc     /dev/block/by-name/reserved       flags=display="Reserved";backup=1
-/rsv            emmc     /dev/block/by-name/rsv            flags=display="Rsv";backup=1
-/sdcard         vfat     /dev/block/mmcblk0p1              flags=backup=1;storage;settingsstorage;display="SDCard";wipeingui 
-/extsd          vfat     /dev/block/mmcblk1p1              flags=backup=1;storage;display="extsd";wipeingui;removable
-/usbhost        vfat     /dev/block/sda1                   flags=display="USB OTG";removable;storage                       
+#device    mountpoint    fstype    options    flags?    (fstab    version    2)
+/dev/block/by-name/bootloader   /bootloader emmc    defaults    defaults
+/dev/block/by-name/logo         /logo       emmc    defaults    defaults
+/dev/block/by-name/vbmeta       /vbmeta       emmc    defaults    defaults
+/dev/block/recovery     /recovery   emmc    defaults    defaults
+/dev/block/by-name/boot         /boot   emmc    defaults    defaults
+/dev/block/by-name/misc         /misc   emmc    defaults    defaults
+/dev/block/by-name/system       /system   ext4    defaults    defaults
+/dev/block/by-name/vendor       /vendor ext4    defaults    defaults
+/dev/block/by-name/odm          /odm    ext4    defaults    defaults
+/dev/block/by-name/param        /param    ext4    defaults    defaults
+/dev/block/by-name/product      /product    ext4    defaults    defaults
+/dev/block/by-name/metadata     /metadata    ext4    defaults    defaults
+/dev/block/by-name/tee          /tee    ext4    defaults    defaults
+/dev/block/by-name/cache        /cache  ext4    defaults    defaults
+/dev/block/by-name/data     /data   ext4    defaults    encryptable=footer
+/dev/block/mmcblk1p1    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk1p2    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk1p3    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk1p4    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk1p5    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk1p6    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk2p1    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk2p2    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk2p3    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk2p4    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk2p5    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk2p6    /sdcard vfat    defaults    defaults
+/dev/block/mmcblk    /sdcard vfat    defaults    defaults
+/dev/block/sd##         /udisk  auto    defaults    defaults
