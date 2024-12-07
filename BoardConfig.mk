@@ -56,7 +56,7 @@ TARGET_KERNEL_SOURCE := kernel/amlogic/ampere
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
+TARGET_KERNEL_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 
 # Partitions
