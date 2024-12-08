@@ -13,13 +13,6 @@
 /tee            ext4     /dev/block/by-name/tee            flags=display="Tee";backup=1
 /cache          ext4     /dev/block/by-name/cache          flags=display="Cache";backup=1;wipeingui;wipeduringfactoryreset
 /data           ext4     /dev/block/by-name/data           flags=display="Data";backup=1;wipeingui;wipeduringfactoryreset
-/super          emmc     /dev/block/by-name/super          flags=display="Super";backup=1
-/cri_data       emmc     /dev/block/by-name/cri_data       flags=display="Cri_Data";backup=1
-/dtbo           emmc     /dev/block/by-name/dtbo           flags=display="Dtbo";backup=1
-/env            emmc     /dev/block/by-name/env            flags=display="Env";backup=1
-/factory        ext4     /dev/block/by-name/factory        flags=display="Factory";backup=1
-/reserved       emmc     /dev/block/by-name/reserved       flags=display="Reserved";backup=1
-/rsv            emmc     /dev/block/by-name/rsv            flags=display="Rsv";backup=1
 /sdcard         vfat     /dev/block/mmcblk0p1              flags=backup=1;storage;settingsstorage;display="SDCard";wipeingui 
 /extsd          vfat     /dev/block/mmcblk1p1              flags=backup=1;storage;display="extsd";wipeingui;removable
-/usbhost        vfat     /dev/block/sda1                   flags=display="USB OTG";removable;storage                       
+/usbhost        vfat     /dev/block/sda1                   flags=display="USB OTG";removable;storage  
