@@ -104,15 +104,12 @@ TW_NO_LEGACY_PROPS := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 RECOVERY_SDCARD_ON_DATA := true
-
-# TWRP specific build flags
 RECOVERY_VARIANT := twrp
 TARGET_RECOVERY_FORCE_PIXEL_FORMAT := "RGB_565"
 TW_BRIGHTNESS_PATH := "/sys/devices/platform/gpioleds/leds/sys_led/brightness"
-
 TW_INCLUDE_NTFS_3G := true
 TW_INCLUDE_CRYPTO := true
 TW_USE_NEW_MINADBD := true
 TW_NO_BATT_PERCENT := true
 TW_NO_SCREEN_TIMEOUT := true
-TW_NO_LEGACY_PROPS := true
+
