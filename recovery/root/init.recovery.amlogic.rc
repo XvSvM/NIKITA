@@ -57,7 +57,6 @@ on boot
     symlink /dev/block/data /dev/block/by-name/data
 
 service console /system/bin/sh
-    disabled
     seclabel u:r:shell:s0
     console
 
@@ -371,11 +370,3 @@ on property:sys.usb.typec.power_role=source
 on property:sys.usb.typec.power_role=sink
     write /sys/class/dual_role_usb/otg_default/power_role ${sys.usb.typec.power_role}
     setprop sys.usb.typec.state ${sys.usb.typec.power_role}
-
-on init && property:ro.debuggable=1
-    start console
-
-on init && property:ro.debuggable=0 && property:ro.boot.debuggable=1
-    start console
-
-

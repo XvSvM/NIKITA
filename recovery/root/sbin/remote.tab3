@@ -1,0 +1,32 @@
+custom_name = amlogic-remote-3
+custom_code = 0xbf00  
+release_delay = 80
+
+key_begin
+        0x43 116        # power
+        0x50 51         # Google ASSISTANT
+        0x0B 2          # 1
+        0x0C 3          # 2
+        0x0D 4          # 3
+        0x0E 5          # 4
+        0x0F 6          # 5
+        0x01 7          # 6
+        0x11 8          # 7
+        0x12 9          # 8
+        0x13 10         # 9
+        0x0A 11         # 0
+        0x15 103        # up
+        0x17 105        # left
+        0x14 97         # enter
+        0x18 106        # right
+        0x16 108        # down
+        0x51 158        # back
+        0x52 115        # volum up
+        0x07 172        # home
+        0x4B 402        # CH+
+        0x53 114        # volum down
+        0x4C 403        # CH-
+        0x46 113        # mute
+        0x45 119        #F1
+        0x06 59         #PROG_RED
+key_end
